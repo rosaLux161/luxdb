@@ -16,3 +16,9 @@ Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 
 Route::get('/services', 'PagesController@services');//->middleware('auth'); für Authentifizierung
+
+Route::get('/customer/new', 'PagesController@newcustomer');
+
+Route::post('/customer/new', 'PagesController@savecustomer');
+
+Route::get('/customer/show', 'PagesController@newcustomer');
