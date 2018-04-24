@@ -16,4 +16,11 @@ class PagesController extends Controller
     public function services(){
         return view('pages.services');
     }
+    public function newcustomer(){
+        return view('pages.newcustomer');
+    }
+    public function savecustomer(Request $request){
+        $lastname = $request->lastname;
+        return view('pages.showcustomer', compact('lastname'));
+    }
 }
