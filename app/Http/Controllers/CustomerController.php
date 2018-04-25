@@ -56,6 +56,16 @@ class CustomerController extends Controller {
      */
     public function show($id)
     {
+      $customers = Customer::where('id', $id)->get();
+      foreach($customers as $customer){
+        $lastname = $customer->lastname;
+        $firstname = $customer->firstname;
+        $company = $customer->company;
+        $phonenumber = $customer->telephonenumber;
+        $email = $customer->email;
+        $officialid = $customer->officialid;
+        return view('pages.showcustomer', compact('lastname','firstname','company','phonenumber','email','officialid'));
+      }
       
     }
   
