@@ -14,9 +14,25 @@ class CustomerController extends Controller {
      */
     public function index()
     {
-      
+      return view('pages.customer.search');
     }
   
+        /**
+     * Kundensuche
+     *
+     * @return Response
+     */
+    public function search(Request $request)
+    {
+      $customers = Customer::where('lastname', $request->lastname)->get();
+      /*foreach($customers as $customer){
+        $lastname = $customer->lastname;
+        $firstname = $customer->firstname;
+        return view('pages.customer.search', compact('lastname','firstname'));
+    }*/
+    return view('pages.customer.search', compact('customers'));
+  }
+
     /**
      * Show the form for creating a new resource.
      *

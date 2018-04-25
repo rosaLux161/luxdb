@@ -20,10 +20,7 @@
             <a class="nav-link" href="/">Startseite</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about">Über</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/services">Service</a>
+            <a class="nav-link" href="/customers">Kundenverwaltung</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/customers/create">Neuen Kunden anlegen</a>

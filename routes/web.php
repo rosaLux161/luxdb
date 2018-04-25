@@ -13,6 +13,7 @@
 
 Route::get('/', 'PagesController@index');
 
-Route::get('/services', 'PagesController@services');//->middleware('auth'); für Authentifizierung
+Route::get('/services', 'PagesController@services');
 
-Route::resource('/customers', 'CustomerController');
+Route::post('/customers/search', 'CustomerController@search');
+Route::resource('/customers', 'CustomerController');//->middleware('auth'); für Authentifizierung
