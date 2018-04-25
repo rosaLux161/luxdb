@@ -26,7 +26,7 @@
             <a class="nav-link" href="/services">Service</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/customer/new">Neuen Kunden anlegen</a>
+            <a class="nav-link" href="/customers/create">Neuen Kunden anlegen</a>
           </li>
         </ul>
       </div>

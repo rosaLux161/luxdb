@@ -24,7 +24,7 @@ class CustomerController extends Controller {
      */
     public function create()
     {
-      return view('pages.newcustomer');
+      return view('pages.customer.create');
     }
   
     /**
@@ -64,7 +64,7 @@ class CustomerController extends Controller {
         $phonenumber = $customer->telephonenumber;
         $email = $customer->email;
         $officialid = $customer->officialid;
-        return view('pages.showcustomer', compact('lastname','firstname','company','phonenumber','email','officialid'));
+        return view('pages.customer.show', compact('lastname','firstname','company','phonenumber','email','officialid'));
       }
       
     }
