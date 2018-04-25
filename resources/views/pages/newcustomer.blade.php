@@ -3,7 +3,7 @@
 @section('content')
     <h1>Neuen Kunden anlegen</h1>
 
-    <form method="POST" action ="/customer/new">
+    <form method="POST" action ="/customers">
             {{csrf_field()}}
             <div class="form-group">
                 <label for="lastname">Nachname</label>
