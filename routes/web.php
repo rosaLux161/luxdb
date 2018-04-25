@@ -16,7 +16,7 @@ Route::get('/', 'PagesController@index');
 Route::get('/services', 'PagesController@services');
 
 Route::post('/customers/search', 'CustomerController@search');
-Route::resource('/customers', 'CustomerController')->middleware('auth');// für Authentifizierung
+Route::resource('/customers', 'CustomerController');//->middleware('auth');// für Authentifizierung
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
