@@ -18,7 +18,7 @@
     <ul class="list-group">
 
             @foreach($customers as $customer)
-        <li class="list-group-item">{{$customer->lastname}}, {{$customer->firstname}}</li>
+        <li class="list-group-item"><a href="/customers/{{$customer->id}}">{{$customer->lastname}}, {{$customer->firstname}}</a></li>
     @endforeach
 
     </ul>

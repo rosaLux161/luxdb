@@ -8,4 +8,7 @@
                 <p>Telefonnummer: {{$phonenumber}}</p>
                     <p>E-Mail: {{$email}}</p>
                         <p>Kundennummer: {{$officialid}}</p>
+    <p>Straße, Hausnummer: {{$street}}, {{$housenumber}}</p>
+    <p>PLZ, Ort: {{$zip}}, {{$city}}</p>
+    <a href="/customers/{{$id}}/edit">Bearbeiten</a>
 @endsection
