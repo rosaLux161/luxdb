@@ -20,3 +20,4 @@ Route::resource('/customers', 'CustomerController');//->middleware('auth');// fÃ
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('search/autocomplete', 'SearchController@autocomplete');
