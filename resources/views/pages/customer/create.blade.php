@@ -22,7 +22,7 @@
         <input type="text" class="form-control" name="company">
       </div>
       <div class="form-group">
-        <label for="phonenumber">Telefonnummer
+        <label for="phonenumber">Telefonnumer
         </label>
         <input type="text" class="form-control" name="phonenumber">
       </div>
